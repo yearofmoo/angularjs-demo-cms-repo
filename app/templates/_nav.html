@@ -1,0 +1,22 @@
+<script type="text/ng-template" id="nav-expand-search-tpl">
+</script>
+
+<script type="text/ng-template" id="nav-expand-heading">
+</script>
+
+<h3 class="nav-heading" nav-expand="#/lists?">
+  <a href="#/lists/">Lists</a>
+
+  <a href="#/lists/new" class="nav-new-action"><i class="icon-list-add"></i></a>
+  <div class="nav-expand-contents">
+    <i class="nav-expand-search-icon icon-search"></i>
+    <input type="text" ng-model="$parent.q" class="nav-expand-search-field" />
+
+    <a href="#/lists/{{ result.id }}"
+       ng-repeat="result in lists | clearEmpty | filter:q track by result.id"
+       class="nav-list-result"
+       ng-class="{active:routeParams.list_id==result.id}">
+      {{ result.title }}
+    </a>
+  </div>
+</h3>

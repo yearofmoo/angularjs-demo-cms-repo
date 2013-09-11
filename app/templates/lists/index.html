@@ -1,0 +1,30 @@
+<header>
+  <h2>Collection of Lists</h2>
+</header>
+<div ng-if="!hasLists()">
+  You currently have no lists. <a href="#/lists/new">Click here to create one</a>.
+</div>
+<div ng-if="hasLists()">
+  <div ng-repeat="list in lists | clearEmpty track by list.id" class="list-result">
+    <h2><a href="#/lists/{{ list.id }}">{{ list.title }}</a></h2>
+    <div class="row">
+      <div class="four columns">
+        <h5>Description / Summary</h5>
+        {{ list.summary }}
+      </div>
+      <div class="four columns">
+        <h5>Keywords</h5>
+        {{ list.keywords }}
+      </div>
+      <div class="four columns">
+        <h5>Entries</h5>
+        {{ list.entries.length }}
+      </div>
+    </div>
+    <nav>
+      <div class="btn info medium">
+        <a href="#/lists/{{ list.id }}">View List</a>
+      </div>
+    </nav>
+  </div>
+</div>

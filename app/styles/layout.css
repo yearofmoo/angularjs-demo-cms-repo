@@ -1,0 +1,31 @@
+#wrapper {
+  overflow-x:hidden;
+}
+
+#body, .row {
+  max-width:inherit;
+  padding:0!important;
+}
+
+#nav {
+  position:fixed;
+  top:0;
+  left:0;
+  bottom:0;
+  overflow:scroll;
+  padding:10px;
+  border-right:1px solid #ddd;
+  width:19.2%;
+  background:white;
+  z-index:1000;
+}
+
+#stage {
+  width:82%;
+  margin-left:19.2%;
+}
+
+#view {
+  padding:10px;
+  position:relative;
+}

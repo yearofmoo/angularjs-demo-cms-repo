@@ -1,0 +1,33 @@
+<!DOCTYPE html> 
+<html ng-app="databus" ng-controller="AppCtrl">
+<head>
+<title>-</title>
+<link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="/components/gumby/css/gumby.css" />
+<link rel="stylesheet" type="text/css" href="/styles/layout.css" />
+<link rel="stylesheet" type="text/css" href="/styles/modules.css" />
+<link rel="stylesheet" type="text/css" href="/styles/animations.css" />
+</head>
+
+<body>
+  <div id="wrapper">
+    <div id="body" class="row">
+      <aside id="nav" ng-include="partial('/_nav.html')"></aside>
+      <main id="stage">
+        <div id="view" ng-view></div>
+      </main>
+    </div>
+  </div>
+
+<script type="text/javascript" src="/components/jquery/jquery.js"></script>
+<script type="text/javascript" src="/components/angularjs/angular.js"></script>
+<script type="text/javascript" src="/components/angularjs/angular-route.js"></script>
+<script type="text/javascript" src="/components/angularjs/angular-animate.js"></script>
+<script type="text/javascript" src="/scripts/config.js"></script>
+<script type="text/javascript" src="/scripts/directives.js"></script>
+<script type="text/javascript" src="/scripts/modules/HomePages.js"></script>
+<script type="text/javascript" src="/scripts/modules/Storage.js"></script>
+<script type="text/javascript" src="/scripts/modules/ListPages.js"></script>
+<script type="text/javascript" src="/scripts/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "name": "gumby",
+  "version": "2.2.17",
+  "main": [
+    "./js/libs/gumby.min.js",
+    "./css/gumby.css"
+  ],
+  "gitHead": "4c8f0d4d5debccd1151623fe5441fc391ef83ad5",
+  "readme": "Gumby Framework\n=====================\n\nGumby Framework is a flexible, responsive CSS Framework, Powered by SASS. Create rapid and logical page layout and app\nprototypes with a flexible and responsive grid system and UI kit.\n\nFull documentation can be found at [http://gumbyframework.com](http://gumbyframework.com/docs).\n\nGumby is developed with love by your friends at [Digital Surgeons](http://www.digitalsurgeons.com).\n\nGumby has a few dependencies. Big thank you to the innovative geniuses behind these awesome technologies.\n\n- [Sass](https://github.com/nex3/sass) - Nathan Weizenbaum\n- [Compass](https://github.com/chriseppstein/compass) - Chris Eppstein\n- [Modular Scale](https://github.com/Team-Sass/modular-scale) - Scott Kellum\n- [jQuery](http://jquery.com/)\n- [Modernizr](http://modernizr.com/)\n\n**MIT Open Source License**\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated\ndocumentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the\nrights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit\npersons to whom the Software is furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the\nSoftware.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE\nWARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR\nCOPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR\nOTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n",
+  "readmeFilename": "README.md",
+  "_id": "gumby@2.2.12",
+  "description": "Gumby Framework =====================",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/GumbyFramework/Gumby.git"
+  }
+}

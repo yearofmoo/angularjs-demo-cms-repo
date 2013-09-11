@@ -1,0 +1,114 @@
+.nav-list-result {
+  display:block;
+  border-top:1px solid #ddd;
+  background:#eee;
+}
+
+.nav-list-result.active {
+  background:#d04526;
+  color:white;
+}
+
+.nav-new-action {
+  float:right;
+}
+
+.nav-search-form {
+  border-bottom:1px solid #ddd;
+  padding:10px;
+  background:#eee;
+  box-shadow:0 0 20px #ccc;
+}
+
+.nav-search-form.focus {
+  background:#ddd;
+}
+
+.nav-search-input {
+  width:80%;
+  font-size:1.5em;
+  border:0;
+  background:none;
+}
+
+.nav-search-input:focus {
+  outline:0;
+}
+
+.nav-search-icon {
+  font-size:20px;
+}
+
+.nav-expand-search {
+  border-bottom:1px solid #aaa;
+}
+
+.nav-expand-search-field {
+  border:0;
+  padding:5px;
+  width:60%;
+}
+.nav-expand-search-field:focus {
+  outline:0;
+}
+
+.nav-expand-search-icon,
+.nav-expand-search-field {
+  font-size:15px;
+}
+
+.list-entry-item {
+  background:#eee;
+  border-top:1px solid #ddd;
+  padding:5px;
+}
+
+.list-entry-item,
+.list-entry-input {
+  font-size:25px;
+}
+
+.list-entry-item:hover,
+.list-entry-item.focus {
+  background:#e4e4e4;
+}
+
+.list-entry-item.new {
+  font-weight:bold;
+  color:black;
+  background:#ddd;
+}
+
+.list-entry-input {
+  background:none;
+  border:0;
+  width:90%;
+}
+
+.list-entry-input:focus {
+  outline:none;
+}
+
+.list-result {
+  border-top:1px solid #ddd;
+  padding-bottom:20px;
+}
+
+.list-entries {
+  margin-top:20px;
+}
+
+.fixed-view {
+  position:fixed;
+  left:0;
+  bottom:0;
+  right:0;
+}
+
+.view-bar {
+  background:rgba(255,255,255,0.8);
+  left:19%;
+  padding:10px 20px;
+  border-top:2px solid #ddd;
+  text-align:right;
+}

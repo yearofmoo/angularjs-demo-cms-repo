@@ -1,0 +1,9 @@
+<form class="nav-search-form" ng-class="{focus:search_focus}" ng-submit="searching=true">
+  <i class="nav-search-icon icon-search" ng-hide="searching"></i>
+  <i class="nav-search-icon icon-dot-3" ng-show="searching"></i>
+  <input type="text"
+         class="nav-search-input"
+         ng-model="path"
+         ng-focus="search_focus=true"
+         ng-blur="search_focus=false" />
+</form>

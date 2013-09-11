@@ -1,0 +1,44 @@
+<div class="row">
+  <header class="eight columns">
+    <h2>{{ list.title }} <span>{{ list.keywords }}</span></h2>
+    <div class="row">
+      <div class="six columns">
+        <h5>Description / Summary</h5>
+        {{ list.summary }}
+      </div>
+      <div class="six columns">
+        <h5>Keywords</h5>
+        {{ list.keywords }}
+      </div>
+    </div>
+  </header>
+
+  <nav class="item-actions four columns">
+    <a href="#/lists/{{ list.id }}/edit"><i class="icon-pencil"></i> Edit</a>
+    <a href="#" ng-click="destroy()"><i class="icon-trash"></i> Delete</a>
+  </nav>
+</div>
+
+<form class="row list-entries" ng-controller="ListEntriesFormCtrl" ng-submit="submit(); changed=false">
+  <div ng-repeat="entry in entries track by $index"
+       class="list-entry-item"
+       ng-class="{focus:on, new:entry.isNew}">
+    {{ $index + 1 }}.
+    <input type="text"
+           class="list-entry-input"
+           ng-model="entry.content"
+           ng-change="$parent.changed=true; entry.isNew=true"
+           ng-focus="on=true"
+           ng-blur="checkBounds(); on=false" />
+  </div>
+  <nav class="fixed-view view-bar" ng-if="changed">
+    <div ng-if="changed">
+      You have made edits to your notes
+    </div>
+    <span class="pretty medium info btn">
+      <button>
+        Please Save
+      </button>
+    </span>
+  </nav>
+</form>

@@ -1,0 +1,31 @@
+.view-bar.ng-enter,
+.view-bar.ng-leave {
+  transition:0.2s linear all;
+  display:block!important;
+}
+
+.view-bar.ng-leave.ng-leave-active,
+.view-bar.ng-enter {
+  bottom:-50px;
+}
+
+.view-bar.ng-leave,
+.view-bar.ng-enter.ng-enter-active {
+  bottom:0;
+}
+
+.nav-list-result.ng-enter,
+.nav-list-result.ng-leave {
+  transition:0.5s linear all;
+}
+
+.nav-list-result.ng-leave.ng-leave-active,
+.nav-list-result.ng-enter {
+  opacity:0;
+}
+
+.nav-list-result.ng-enter.ng-enter-active,
+.nav-list-result.ng-leave {
+  opacity:1;
+}
+
